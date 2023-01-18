@@ -1,6 +1,10 @@
-﻿namespace Find_Easy_Flat.Api.Brokers.StorageBroker
+﻿using Find_Easy_Flat.Api.Models.Foundation.Guests;
+
+namespace Find_Easy_Flat.Api.Brokers.StorageBroker
 {
-    public interface IStorageBroker
+    public partial interface IStorageBroker
     {
+        //CRUD functions
+        ValueTask<Guest> InsertGuest(Guest guest);
     }
 }
