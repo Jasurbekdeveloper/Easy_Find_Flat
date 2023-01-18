@@ -3,10 +3,9 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Find_Easy_Flat.Api.Brokers.StorageBroker
 {
-    public partial class StorageBroker : EFxceptionsContext
+    public partial class StorageBroker : EFxceptionsContext , IStorageBroker
     {
         private readonly IConfiguration configuration;
-        public DbSet<Guest> Guests { get; set; }
         public StorageBroker(IConfiguration configuration)
         {
             this.configuration = configuration;
