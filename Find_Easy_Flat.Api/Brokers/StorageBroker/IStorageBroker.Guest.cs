@@ -6,5 +6,7 @@ namespace Find_Easy_Flat.Api.Brokers.StorageBroker
     {
         //CRUD functions
         ValueTask<Guest> InsertGuest(Guest guest);
+        //CRUD functions
+        ValueTask<Guest> InsertGuestAsync(Guest guest);
     }
 }
