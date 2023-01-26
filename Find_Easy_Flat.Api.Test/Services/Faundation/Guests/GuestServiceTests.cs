@@ -1,11 +1,8 @@
 ﻿using Find_Easy_Flat.Api.Brokers.StorageBroker;
 using Find_Easy_Flat.Api.Models.Foundation.Guests;
 using Find_Easy_Flat.Api.Services.Foundation.Guests;
-using FluentAssertions;
 using Moq;
 using Tynamix.ObjectFiller;
-using Xunit;
-
 namespace Find_Easy_Flat.Api.Test.Services.Faundation.Guests
 {
     public partial class GuestServiceTests
